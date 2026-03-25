@@ -84,7 +84,7 @@ int main(){
 //inherits Person
 //has age
 //Use constructors to initialize values and display them.
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Person{
     public:
@@ -105,5 +105,37 @@ int main(){
     Student k("Linkon", 20);
     cout << "My name is " << k.name << endl;
     cout << "I am " << k.age << "years old " << endl;
+    return 0;
+}*/
+
+#include <iostream>
+using namespace std;
+class Person{
+    public:
+    string name;
+    void names();
+
+    Person(string n){
+        name = n;
+    }
+};
+class Student :public Person{
+    public:
+    int age;
+    void ages();
+    Student(string n, int a) : Person(n){
+        this->age = a;
+    }
+};
+void Student :: ages(){
+    cout << "I am " << age << " years old " << endl;
+}
+void Person :: names(){
+    cout << "My name is " << name << endl;
+}
+int main(){
+    Student k("Linkon", 20);
+    k.names();
+    k.ages();
     return 0;
 }
