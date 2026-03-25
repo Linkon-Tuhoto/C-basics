@@ -51,7 +51,7 @@ class Pupil{
 };*/
 
 //constructor with inheritance
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 class Rep{
@@ -75,5 +75,35 @@ int main(){
     cout << e.name << endl;
     cout << e.salary << endl;
 
+    return 0;
+}*/
+//Question
+//Create a class Person with:
+//name
+//Create class Student:
+//inherits Person
+//has age
+//Use constructors to initialize values and display them.
+#include <iostream>
+using namespace std;
+class Person{
+    public:
+    string name;
+
+    Person(string n){
+        name = n;
+    }
+};
+class Student :public Person{
+    public:
+    int age;
+    Student(string n, int a) : Person(n){
+        age = a;
+    }
+};
+int main(){
+    Student k("Linkon", 20);
+    cout << "My name is " << k.name << endl;
+    cout << "I am " << k.age << "years old " << endl;
     return 0;
 }
