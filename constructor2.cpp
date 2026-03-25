@@ -37,7 +37,7 @@ int main(){
 }*/
 
 //using this pointer
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Pupil{
     public:
@@ -48,4 +48,32 @@ class Pupil{
         this->name = name;
         this->age = age;
     }
+};*/
+
+//constructor with inheritance
+#include <iostream>
+using namespace std;
+
+class Rep{
+    public:
+    string name;
+
+    Rep(string n){
+        name = n;
+    }
 };
+class Teacher : public Rep{
+    public:
+    int salary;
+
+    Teacher(string n, int s) : Rep(n){
+        salary = s;
+    }
+};
+int main(){
+    Teacher e("Victoria", 50000);
+    cout << e.name << endl;
+    cout << e.salary << endl;
+
+    return 0;
+}
