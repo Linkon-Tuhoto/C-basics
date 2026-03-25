@@ -98,7 +98,7 @@ class Student :public Person{
     public:
     int age;
     Student(string n, int a) : Person(n){
-        age = a;
+        this->age = a;
     }
 };
 int main(){
