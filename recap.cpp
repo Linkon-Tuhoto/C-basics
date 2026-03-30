@@ -28,7 +28,7 @@ int main(){
     return 0;
 }*/
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Person{
     public:
@@ -58,5 +58,34 @@ int main (){
     Employee g(100000, "Kang'ethe");
     g.displayName();
     g.displaySalary();
+    return 0;
+}*/
+
+#include <iostream>
+using namespace std;
+class Person{
+    public:
+    string name;
+    Person(string);
+    void displayName();
+};
+class Student :public Person{
+    public:
+    int age;
+    Student(string, int);
+    void displayAge();
+}
+Person ::Person(string k){
+    name = k;
+}
+void Student :: displayAge(){
+    cout << "My name is " << name << "And I am " << age << " years old " << endl;
+}
+void Person :: displayName(){
+    cout << "My name is " << name << endl;
+}
+int main(){
+    Person m("Victz");
+    m.displayName();
     return 0;
 }
