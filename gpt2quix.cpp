@@ -18,7 +18,7 @@ int main(){
 
 
 //Default Constructor Example
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Car{
     public:
@@ -35,5 +35,31 @@ void Car :: displayBrand(){
 int main(){
     Car b("Lexus");
     b.displayBrand();
+    return 0;
+}*/
+
+//Constructor Overloading
+
+#include <iostream>
+using namespace std;
+class Employee{
+    public:
+    string name;
+    int age;
+    Employee();
+    Employee(string n, int u);
+};
+Employee :: Employee(){
+    name = "Ticon";
+}
+Employee ::  Employee(string n, int u){
+    name = n;
+    age = u;
+}
+int main(){
+    Employee c;
+    cout << "My name is " << c.name << endl;
+    Employee d("King'ori", 22);
+    cout << "My name is " << d.name << " and I am " << d.age << " years old." << endl;
     return 0;
 }
