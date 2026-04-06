@@ -44,6 +44,10 @@ Complex :: Complex(){
     real=0;
     imag=0;
 }
+void Complex :: operator ++(){//
+    real = real + 2;
+    imag = imag + 5;
+}
 
 
 
