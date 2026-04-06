@@ -44,9 +44,12 @@ Complex :: Complex(){
     real=0;
     imag=0;
 }
-void Complex :: operator ++(){//
+void Complex :: operator ++(){
     real = real + 2;
     imag = imag + 5;
+}
+void Complex :: displayComplex(){
+    cout << "The complex number is " << real << " + " << imag << "i" << endl;
 }
 
 
