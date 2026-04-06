@@ -28,10 +28,29 @@ int main(){
     return 0;
 }*/
 
+//question 1
+#include <iostream>
+using namespace std;
+class Complex{
+    private:
+    int real;
+    int imag'
+    public:
+    Complex();
+    void operator ++();
+    void displayComplex();
+};
+
+
+
+
+
+
+
 //>Runtym polymorphism
 //2.Operator overriding
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Animal{
     public:
@@ -52,4 +71,4 @@ int main(){
     Bird b;
     b.move();
     return 0;
-}
+}*/
