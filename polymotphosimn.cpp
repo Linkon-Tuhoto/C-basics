@@ -49,7 +49,13 @@ void Complex :: operator ++(){
     imag = imag + 5;
 }
 void Complex :: displayComplex(){
-    cout << "The complex number is " << real << " + " << imag << "i" << endl;
+    cout << "The complex number is " << real << " and " << imag << "i" << endl;
+}
+int main(){
+    Complex c;
+    ++c;
+    c.displayComplex();
+    return 0;
 }
 
 
