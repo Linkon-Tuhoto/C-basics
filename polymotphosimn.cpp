@@ -34,12 +34,16 @@ using namespace std;
 class Complex{
     private:
     int real;
-    int imag'
+    int imag;
     public:
     Complex();
     void operator ++();
     void displayComplex();
 };
+Complex :: Complex(){
+    real=0;
+    imag=0;
+}
 
 
 
