@@ -8,7 +8,7 @@ class Animal{
     Animal();
     Animal(int l, int w);
     Animal(Animal& org); //Copy constructor
-   
+    ~Animal(); //Destructor 
 };
 void Animal :: move(){
     cout << "Animal is running" << endl;
@@ -29,11 +29,15 @@ Animal :: Animal(Animal& org){
     cout << "CC: Cloning an animal" << endl;
     legs = org.legs;
     wings = org.wings;
-    name = "B";
+    name = "C";
 };
+Animal :: ~Animal(){
+    cout << "Killing ....." << name << endl ;
+}
 int main(){
     Animal a;
     a.move();
-    Animal c(a);
+    Animal b(2,4);
+    Animal c(b);
     return 0;
 }
