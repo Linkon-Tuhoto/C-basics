@@ -29,7 +29,7 @@ int main(){
 }*/
 
 //question 1
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 class Complex{
     private:
@@ -56,7 +56,7 @@ int main(){
     ++c;
     c.displayComplex();
     return 0;
-}
+}*/
 
 
 
@@ -67,7 +67,7 @@ int main(){
 //>Runtym polymorphism
 //2.Operator overriding
 
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 class Animal{
     public:
@@ -88,4 +88,4 @@ int main(){
     Bird b;
     b.move();
     return 0;
-}*/
+}
