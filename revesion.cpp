@@ -24,7 +24,7 @@ while(k <= rows){
 }*/
 
 //oop structure in c++ program
-class Cow{
+/*class Cow{
     private:
     int legs;
     public:
@@ -41,5 +41,14 @@ int main(){
     Cow a;
     a.number(4);
     a.display();
+    return 0;
+}*/
+
+//default argument
+void greet(string name){
+    cout << "Hello " << name << endl;
+}
+int main(){
+    greet("Kamau");
     return 0;
 }
