@@ -45,10 +45,37 @@ int main(){
 }*/
 
 //default argument
-void greet(string name){
+/*void greet(string name){
     cout << "Hello " << name << endl;
 }
 int main(){
     greet("Kamau");
     return 0;
+}*/
+//case statement
+int main(){
+int i;
+int choices;
+cout << "Enter a number btn 1 -5: " << endl;
+cin >> choices;
+switch(choices){
+    case 1:
+    cout << "Pilau" << endl;
+    break;
+    case 2:
+    cout << "Rice" << endl;
+    break;
+    case 3:
+    cout << "Ugali" << endl;
+    break;
+    case 4:
+    cout << "Chapati" << endl;
+    break;
+    case 5:
+    cout << "Githeri" << endl;
+    break;
+    default:
+    cout << "Invalid choice" << endl;
+}
+return 0;
 }
